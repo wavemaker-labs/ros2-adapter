@@ -1,5 +1,8 @@
 FROM osrf/ros:humble-desktop
 
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
 RUN apt-get update
 RUN apt-get install -y apt-utils 
 RUN apt-get install -y python3-dev python3-pip libffi-dev
